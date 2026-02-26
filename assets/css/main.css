@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 :root{
@@ -13,6 +13,7 @@ body{
     --text-color: #333;
     --background-color: #f0f0f0;
     --border-radius: 5px;
+    --Color_inter: 'Inter', sans-serif;
 }
 ul{
     list-style: none;
@@ -26,11 +27,17 @@ a{
     padding: 20px 0;
     
 }
+
 .container{
     background-color: #f0f0f0;
     width: 70%;
     margin: 0 auto;
 }
+img{
+    width: 100%;
+    height: auto;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
@@ -38,6 +45,7 @@ a{
     flex-wrap: nowrap;
 
 }
+
 .header .logo{
    
 }
@@ -48,6 +56,14 @@ gap: 20px;
 font-size: 1.2rem;
 align-items: center;
 }
+
+.header .ListHeader a{
+font-family: var(--Color_inter);
+width: 40px;
+height: 10px;
+font-size: 14px;
+}
+
 .header .iconHeader{
     display: flex;
     gap: 20px;
@@ -58,29 +74,74 @@ align-items: center;
 
 
 /* Section itms products */
+.section{
 
+}
 .section .row{
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    align-items: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 
 .section .products{
-    /* width: calc((100% - 90px) / 4);
+     /* width: calc((100% - 90px) / 4); */
+     
+     /*
     justify-content: center;
     align-items: center; */
     
    
 }
 
-.section .products p{
+.section .products h2{
     text-align: center;
     text-transform:  uppercase;
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-family: var(--Color_inter);
+    font-size: 14px;
 
 }
+
+/* best_sellers */
+.best_sellers{
+    padding: 50px 0;
+    background-color: #FFFFFF;
+}
+
+.best_sellers  h2{
+    text-align: center;
+    text-transform:  uppercase;
+    font-family: var(--Color_inter);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.best_sellers .row{
+            background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.best_sellers .sellers{
+    width: calc((100% - 45px) / 4);
+    justify-content: center;
+    align-items: center;
+}
+.best_sellers .writ_sellers{
+    text-align: left;
+    text-transform:  uppercase;
+    font-family: var(--Color_inter);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.best_sellers button{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 20px;
     
 /* h1{
     color: #229114;
