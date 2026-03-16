@@ -24,6 +24,9 @@
 .sellers .img_sellers {
     text-align: center;
 }
+.hero{
+    margin-top: 30%;
+}
 }
 
 
@@ -70,6 +73,9 @@
         justify-content: center;
         align-items: center;
     }
+    .hero{
+        margin-top: 20%;
+    }
 
 
 
@@ -107,6 +113,10 @@
         width: calc((100% - 30px) / 3);
         justify-content: center;
         align-items: center;
+    }
+
+    .hero{
+        margin-top: 10%;
     }
 
 }
