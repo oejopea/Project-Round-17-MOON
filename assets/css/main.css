@@ -83,9 +83,13 @@ img {
     font-size: 1.2rem;
     align-items: center;
 }
+table ul li{
+    writing-mode:vertical-lr;
+}
 
 
 /* hero */
+
 .hero {
     background-image: url('.././img/bdbb45838f6bfd567de5a4771587a3d4ce6b9a3e.jpg');
     background-size: cover;
@@ -474,7 +478,6 @@ img {
 /* Sign Up */
 
 .signUp .container {
-    background-color: #FFFFFF;
     margin-top: 5%;
 }
 .singUp .enterEmail{
@@ -526,6 +529,80 @@ img {
    align-self: center;
     
 }
+
+/* footer */
+
+.footer{
+    background-color: #3A3854 ;
+    justify-content: space-around;
+    padding: 40px;
+}
+.footer .container{
+    background-color: #3A3854 ;
+}
+.footers{
+    gap: 10px;
+    width: calc((100% - 20px) /2); 
+    border-bottom: 2px solid white ;
+    padding: 40px;
+}
+.footer .footers img{
+    width:145px;
+    height: 39px;
+    color: #f0f0f0;
+}
+.left{
+    display: flex;
+    gap: 40px;
+    border-left: 2px solid white ;
+    padding: 10px;
+}
+.left li{
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+.left h3{
+    color: #fff;
+}
+.footers.rigit p{
+    color: #FFFFFF;
+    line-height: 17px;
+    text-align: center;
+    
+}
+.footer .footers.rigit button{
+    background-color: #3A3854 ;
+    color: #FFFFFF;
+    width: fit-content;
+    border: 1px solid rgb(0, 255, 234);
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.footer-bottom {
+    margin-top: 10px;
+    text-align: center;      
+    padding: 15px 0;         
+    color: #fff;             
+    font-size: 14px;       
+    width: 100%;
+}
+
+.footer-bottom a {
+    color: #fff;            
+    text-decoration: none;   
+    margin: 0 5px;           
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; 
+}
+
+
+
+
+
 
 
 /* h1{

@@ -122,6 +122,13 @@
 .collection  .left{
     order: 1;
 }
+.footers{
+    width: 100%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
 }
 @media screen and (min-width: 0px) and (max-width: 800px) {
     .mades {
