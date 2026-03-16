@@ -12,8 +12,6 @@
     .section{
     margin-top: 22%;
     }
-
-}
     .hero{
         height: 60vh;
         margin-top: 5%;
@@ -23,6 +21,8 @@
 .section .products{
     width: 100%;
 }
+}
+
 
 .sellers .img_sellers {
     text-align: center;
@@ -90,11 +90,17 @@
     display: none;
 }
 
-
-    .section .products {
+    .section .row  .products {
         width: calc((100% - 30px) / 3);
+         justify-content: center;
+        align-items: center;
+
 
     }
+
+        
+
+
 
     .best_sellers .sellers {
         width: calc((100% - 30px) / 3);
