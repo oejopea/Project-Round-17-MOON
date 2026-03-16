@@ -86,25 +86,74 @@ img {
 
 
 /* hero */
-.hero{
+.hero {
     background-image: url('.././img/bdbb45838f6bfd567de5a4771587a3d4ce6b9a3e.jpg');
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
-    min-height: 100vh;      
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
     background-attachment: fixed;
+    position: relative;
+    margin-top: 5%;
+
+
 
 
 }
+
+
+.hero .icon {
+    text-align: center;
+    background-color: #825F66;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    width: 35%;
+    position: absolute;
+    color: white;
+}
+
+.hero .icon img {
+    width: 50%;
+    height: auto;
+
+}
+
+.hero .icon h2 {
+    font-family: Garamond, serif;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero .icon p {
+    font-family: var(--Color_inter);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.hero .icon button {
+    color: rgb(0, 0, 0);
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
 
 
 /* Section itms products */
 .section {
     margin-top: 8%;
 }
+
 /* .section .row {
     display: flex;
     justify-content: space-between;
@@ -117,6 +166,7 @@ img {
 .section .products {
     width: calc((100% - 45px) / 4);
     box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
 
 
@@ -144,6 +194,63 @@ img {
 
 .products_four {
     order: -1;
+}
+
+/* collection */
+
+.collection {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.collection .collections {
+    width: calc((100% - 5px) / 2);
+}
+
+
+.collection img {
+    width: 100%;
+    height: auto;
+}
+
+.collection .rigth {
+    order: 1;
+
+}
+
+.collection .left {
+    order: 0;
+}
+
+.collection .left h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--Color_inter);
+    font-size: 28px;
+    line-height: 32px;
+
+}
+
+.collection .left p {
+    margin-top: 5px;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.collection .left button {
+    color: rgb(0, 0, 0);
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: transparent;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+
+
 }
 
 /* best_sellers */
@@ -234,36 +341,72 @@ img {
     order: 0;
 }
 
+/* MADE  */
+.mades {
+    width: calc(100% / 2);
+    width: calc(100%/2);
+    jaustify-content: center;
+    align-items: center;
+}
+  .four img{
+    width: 100%;
+    height: 10px;
+}
+.mades p{
+    line-height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.mades h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--Color_inter);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.mades button{
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
 
 /* DiscoverNewArrivals */
-.DiscoverNewArrivals .container  {
+.DiscoverNewArrivals .container {
     background-color: #FFFFFF;
 
 }
-.DiscoverNewArrivals .headerDiscover h2{
-    text-align: center , bold;
+
+.DiscoverNewArrivals .headerDiscover h2 {
+    text-align: center;
     text-transform: uppercase;
     font-family: Garamond, serif;
     font-size: 30px;
     margin-bottom: 30px;
     margin-top: 10px;
-    
+
 }
 
-.DiscoverNewArrivals .row{
-    display:grid ;
+.DiscoverNewArrivals .row {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-.productsNewArrivals p{
+.productsNewArrivals p {
     line-height: 30px;
 }
-.productsNewArrivals span{
+
+.productsNewArrivals span {
     margin-top: 12px;
     display: inline-block;
 }
-.productsNewArrivals h3{
+
+.productsNewArrivals h3 {
     text-align: left;
     text-transform: uppercase;
     font-family: var(--Color_inter);
@@ -276,13 +419,113 @@ img {
     width: 100%;
     border: 1px solid black;
     padding: 10px 20px;
-    
+
 }
-.productsNewArrivals img{
+
+.productsNewArrivals img {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
 
+/* OurBlog */
+
+.OurBlog .container {
+    background-color: #FFFFFF;
+    margin-top: 5%;
+}
+.OurBlog .Blogs{
+    width: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+}
+.OurBlog .Blogs img{
+    width: 100%;
+    height: auto;
+}
+.OurBlog .Blogs_one{
+    order: 2;
+}
+.OurBlog .Blogs_two{
+    order: 1;
+}
+.OurBlog .Blogs p{
+    line-height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+.OurBlog .Blogs h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--Color_inter);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.OurBlog .Blogs button{
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}   
+
+/* Sign Up */
+
+.signUp .container {
+    background-color: #FFFFFF;
+    margin-top: 5%;
+}
+.singUp .enterEmail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.singUp .enterEmail h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--Color_inter);
+    font-size: 30px;
+    margin-top: 10px;
+
+}
+.singUp .enterEmail p{
+    line-height: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.singUp .enterEmail form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+
+}
+.singUp .enterEmail  input{
+    padding: 10px;
+    border: none ;
+    border-radius: var(--border-radius);
+    border-bottom: 1px solid ;
+    width: 300px;
+    text-align: center;
+}
+.singUp .enterEmail  button{
+    align-self: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: fit-content;
+    border: solid 1px;
+    display: block;
+    cursor: pointer;
+    margin: 20px auto;
+   align-self: center;
+    
+}
 
 
 /* h1{
@@ -311,4 +554,3 @@ p{
     height: 500px;
     overflow:auto;
 } */
-
