@@ -33,6 +33,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 9;
 }
 
 .container {
@@ -101,7 +102,6 @@ table ul li{
     display: flex;
     background-attachment: fixed;
     position: relative;
-    margin-top: 5%;
 
 
 
@@ -171,6 +171,7 @@ table ul li{
     width: calc((100% - 45px) / 4);
     box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    position: relative;
 
 
 
@@ -198,6 +199,27 @@ table ul li{
 
 .products_four {
     order: -1;
+}
+
+.section_position {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 139, 139, 0.432);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+
+}
+
+.products:hover .section_position{
+    opacity: 1;
 }
 
 /* collection */
@@ -294,6 +316,7 @@ table ul li{
     align-items: center;
     flex-grow: 0;
     box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
     /* margin-top: 5px; */
 }
 
@@ -343,6 +366,18 @@ table ul li{
 
 .sellers_eight {
     order: 0;
+}
+
+.sales{
+ position: absolute;
+ left: 0;
+ top: 0;
+ right: 0;
+ display: flex;
+ justify-content: center;   
+ align-items: center;
+ background-color: red;
+ width: 100%;
 }
 
 /* MADE  */

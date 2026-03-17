@@ -14,7 +14,6 @@
     }
     .hero{
         height: 60vh;
-        margin-top: 5%;
         background-position: center;
     }
 
@@ -24,9 +23,7 @@
 .sellers .img_sellers {
     text-align: center;
 }
-.hero{
-    margin-top: 30%;
-}
+
 }
 
 
@@ -73,9 +70,7 @@
         justify-content: center;
         align-items: center;
     }
-    .hero{
-        margin-top: 20%;
-    }
+
 
 
 
@@ -115,9 +110,7 @@
         align-items: center;
     }
 
-    .hero{
-        margin-top: 10%;
-    }
+
 
 }
 
